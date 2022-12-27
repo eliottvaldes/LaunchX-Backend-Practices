@@ -2,8 +2,8 @@
  * Create a class to implement a stack
  * remember the stack is LIFO
  * class must include the following methods:
- * push, pop, peek, length
- * * do not use the built in array methods
+ * push, pop, peek, length, print
+ * * do not use the prebuilt array methods
  */
 
 // define the class using PascalCase
@@ -55,3 +55,35 @@ class Stack {
     }
 
 }
+
+
+
+// create a new instance of the stack
+let myStack = new Stack()
+
+console.log('Initial Stack: ' + myStack.print())
+
+// push items to the stack
+myStack.push('a')
+myStack.push('b')
+myStack.push('c')
+myStack.push('d')
+myStack.push('e')
+
+// print the stack
+console.log('Stack: ' + myStack.print())
+
+// pop an item from the stack
+console.log('Pop: ' + myStack.pop())
+
+// print the stack
+console.log('Stack: ' + myStack.print())
+
+// peek at the last item in the stack
+console.log('Peek: ' + myStack.peek())
+
+// print the stack
+console.log('Stack: ' + myStack.print())
+
+// print the length of the stack
+console.log('Length: ' + myStack.length())
