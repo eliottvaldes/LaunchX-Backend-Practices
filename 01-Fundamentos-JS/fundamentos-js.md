@@ -1,3 +1,0 @@
-# Fundamentos de JavaScript
-
-
