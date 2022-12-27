@@ -1,0 +1,140 @@
+body {
+    background-color: rgba(255, 192, 203, 0.862);
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+/* create a media query for mobile devices */
+@media (max-width: 450px) {
+
+    .container {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .video_panel {
+        width: 100%;
+    }
+
+    #video_proposal {
+        width: 90%;
+        height: 400px;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .response p {
+        font-size: 28px;
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 2700px) {
+
+
+    .container {
+        margin: 0 auto;
+        margin-top: 50px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .video_panel {
+        /* center the content */
+        margin: 0 auto;
+        width: 100%;
+        max-width: 700px;
+        height: auto;
+    }
+
+    #video_proposal {
+        width: 90%;
+        max-width: 650px;
+        height: 420px;
+    }
+
+
+    .question {
+        font-size: 28px;
+    }
+
+    button {
+        font-size: 22px;
+        padding: 5px 10px;
+        margin-top: 10px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .response p {
+        font-size: 34px;
+    }
+
+
+}
+
+
+.question {
+    font-style: italic;
+}
+
+button {
+    background-color: rgb(246, 0, 0);
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+.btn_decline {
+    font-size: 12px;
+}
+
+
+.btn_accept:hover {
+    background-color: rgb(156, 0, 246);
+}
+
+.btn_decline:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+
+.response p {
+    font-weight: bold;
+}
+
+.response img {
+    border-radius: 5rem;
+    height: auto;
+    margin-top: 15px;
+    max-width: 200px;
+    width: 100%;
+}
