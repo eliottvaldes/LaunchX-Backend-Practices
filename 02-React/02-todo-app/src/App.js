@@ -1,12 +1,19 @@
 import './App.scss';
-// import Container component
+// import components
 import Container from './components/Container'
+import FormTodo from './components/FormTodo'
+import TaskList from './components/TaskList'
+
 
 function App() {
   return (
     <div className="App">
       {/* Implement container Component */}
-      <Container/>
+      <Container>
+        <FormTodo/>
+        <TaskList/>
+      </Container>
+
     </div>
   );
 }
