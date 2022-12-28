@@ -14,6 +14,9 @@ const Container = () => {
 
     return (
         <div>
+            <h1>
+                TODO App
+            </h1>
             {/* pass the setItem props to children */}
             <FormTodo setItem={setItem} />
             <TaskList list={list} setList={setList} />
