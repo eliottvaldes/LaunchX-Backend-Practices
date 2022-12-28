@@ -17,7 +17,7 @@ const FormTodo = (props) => {
         
         setItem({
             done: false,
-            id: (+new Date()).toString(),
+            id: (new Date()).toString() + Math.random(),
             description
         })
 
@@ -34,6 +34,7 @@ const FormTodo = (props) => {
                         <input 
                         type='text'
                         className='input'
+                        placeholder='Write your task'
                         value={description}
                         // implement an event to setDescription
                         onChange={e => setDescription(e.target.value)}
