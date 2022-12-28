@@ -9,7 +9,7 @@ const Container = () => {
 
     // craete a f' to save item in list
     const setItem = (setItem) => {
-        setList([list, setItem])
+        setList([...list, setItem])
     }
 
     return (
