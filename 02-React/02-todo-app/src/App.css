@@ -10,6 +10,53 @@ body {
 }
 
 .App {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Courier New', Courier, monospace;
   text-align: center;
+}
+
+.todo-list {
+  background-color: #fff;
+  font-size: 22px;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 24px;
+  padding: 15px 30px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 3rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  margin-top: 20px;
+  height: 20px;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 2px;
+}
+
+button {
+  color:white;
+  background-color: lightseagreen;
+  margin-top: 18px;
+  width: 70%;
+  height: 30px;
+  outline: none;
+  margin-left: 2px;
+  padding: 2px;
+  border: 1px solid black;
+  border-radius: 4rem;
+  cursor: pointer;
+}
+
+button:hover{
+  color:white;
+  background-color: rgb(21, 117, 112);
+  cursor: pointer ;
+}
+
+button:disabled{
+  background-color: rgb(139, 139, 139);
+  color:black;
+  cursor: not-allowed;
 }
