@@ -16,7 +16,7 @@ const TaskList = (props) => {
     }
 
     const onClickRemoveItem = (e) => {
-        const updateList = list.filter(item => item.done)
+        const updateList = list.filter(item => !item.done)
         setList(updateList)
         console.log({list})
     }
@@ -32,7 +32,7 @@ const TaskList = (props) => {
 
             {list.length ? (
                 <p>
-                    <button className='button-blue' onClick={onClickRemoveItem}> Delete</button>
+                    <button className='button-blue' onClick={onClickRemoveItem}> Delete completed </button>
                 </p>
             ) : null}
         </div>
