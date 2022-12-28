@@ -17,7 +17,7 @@ const FormTodo = (props) => {
         
         setItem({
             done: false,
-            id: (new Date()).toString() + Math.random(),
+            id: Number(new Date()) + Math.floor(Math.random()*1000),
             description
         })
 
