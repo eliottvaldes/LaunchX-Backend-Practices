@@ -27,7 +27,7 @@ const TaskList = (props) => {
 
     return (
         <div className='todo-list'>
-            {list.length ? checkbox : 'There is any task'}
+            {list.length ? checkbox : "There isn't any task yet"}
 
             {list.length ? (
                 <p>
